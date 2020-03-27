@@ -1,4 +1,4 @@
-# Oxford code reviews network
+# Oxford code review network
 Want to get  your code reviewed?
 Interested in reviewing some other researcher's code ?
 
