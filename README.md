@@ -48,7 +48,7 @@ For most projects, this means only proposing a **part of you code** for review.
 
 ## <a name="gettingstarted"></a> Getting started
 Make sure you're logged into your GitHub account. If you don't have a GitHub account, you can [create one](https://github.com/join?source=login) for free.
-> The term _issue_ comes from the word _issue tracker_ (the functionality that you are about to use), use by software developpers to report and discuss bugs and problems. However, the issue tracker can be used for any thing, such as 
+> The term _issue_ comes from the word _issue tracker_ (the functionality that you are about to use), used by software developpers to report and discuss bugs and problems. However, the issue tracker can be used for anything, such as 
 > proposing you code review.
 
 ### Propose a code review
