@@ -5,7 +5,7 @@ Anyhow, there are many solutions to share code over the internet!
 - [Visual Studio Code with Live share plugin](#Visual-Studio-Code-with-Live-share-plugin)
 - [tmate](#tmate)
 - [Floobits](#Floobits)
-- [Video conferencing: jitsi](#Video-conferencing:-jitsi)
+- [jitsi for videoconferencing](#jitsi-for-videoconferencing)
 
 ## Visual Studio Code with Live share plugin
 
@@ -107,5 +107,5 @@ Particularly, is possible to "follow" the cursor of another user. If they change
 Floobits plugins are free/libre and open source software, licensed under the Apache 2.0 license.
 Floobits' privacy policy can be found at (https://floobits.com/privacy).
 
-## Video conferencing: jitsi
+## jitsi for videoconferencing
 [jitsi-meet](https://meet.jit.si/) is a web-based free/libre and open source video conferencing app.
