@@ -2,10 +2,10 @@
 Face to face code reviews are currently not possible.
 Anyhow, there are many solutions to share code over the internet!
 
-- [Visual Studio Code with Live share plugin](#Visual Studio Code with Live share plugin)
+- [Visual Studio Code with Live share plugin](#Visual-Studio-Code-with-Live-share-plugin)
 - [tmate](#tmate)
 - [Floobits](#Floobits)
-- [Video conferencing: jitsi](#Video conferencing: jitsi)
+- [Video conferencing: jitsi](#Video-conferencing:-jitsi)
 
 ## Visual Studio Code with Live share plugin
 
@@ -17,7 +17,7 @@ Live share is an extension for VS code that enables developers to work collabora
 
 ### License and privacy
 Although the source code for VS code is provided with an open source license (MIT), the binary provided by Microsoft is not.
-The VScodium project provides builds of VS code released under the MIT license. Particularly, the telemetry included in the binary provided by Microsoft is disabled.
+[The VScodium project](https://vscodium.com/) provides builds of VS code released under the MIT license. Particularly, the telemetry included in the binary provided by Microsoft is disabled.
 
 Similarly to VS code, the Live Share extension binary is proprietary software.
 The corresponding license can be found [here](https://marketplace.visualstudio.com/items/MS-vsliveshare.vsliveshare/license).
@@ -31,7 +31,7 @@ To start sharing your terminal, simply enter in your terminal
 ```bash
 tmate
 ```
-which stars a tmux session inside your terminal (it shouldn't look very different except from the coloured bar at the bottom).
+which starts a tmux session inside your terminal (it shouldn't look very different except from the coloured bar at the bottom).
 
 Next, enter
 ```bash
