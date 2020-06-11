@@ -1,6 +1,6 @@
 # Oxford code review network
 
-[Code review guidelines](#guidelines) | [Getting started](#gettingstarted) | [What are code reviews ?](#whatarecodereviews)
+[Code review guidelines](#guidelines) | [Getting started](#gettingstarted) | [What are code reviews ?](#whatarecodereviews) | [Tools for remote code reviews](remote.md) | [Guidelines for reviewers](guidelines_for_reviewers.md)
 
 
 Want to get your code reviewed?
@@ -13,6 +13,9 @@ If you'd like to volunteer in reviewing some research code, just leave a comment
 If you'd like to participate but are not familiar with GitHub or/and its issue tracking system, see the [getting started section](#gettingstarted).
 
 To learn more about code reviews and their benefits, see [What are a code reviews?](#whatarecodereviews).
+
+If you don't feel confident in your abilities to review code, there are good chances that you should be.
+See the [guidelines for reviewers](guidelines_for_reviewers.md)
 
 ## <a name="guidelines"></a> Code review guidelines
 
@@ -37,7 +40,7 @@ Both meet on MS Teams as planned, and Priya briefly describes the context of her
 Priya walks Sam through the code snippet she selected, explaining her design choices, highlighting the parts that she's proud of, and the parts that she thinks could be improved.
 Sam asks Priya as many questions as they want until they feel they have a good understanding of the code.
 
-Sam notices a few things:
+Sam has read the [guidelines for reviewers](guidelines_for_reviewers.md), and notices a few things:
 
 - One of Priya's function takes a duration as an argument. Sam flags that the function would break whenever a user would pass a negative number. Priya should probaly make sure that a proper `ValueError` exception is raised if a user calls the function with a negtive duration.
 - Next, Sam notices that Priya's code is split into four very long functions. He advises Priya to break these down into smaller functions with descriptive names. This will make her code easier to read, reduce the amount of code that's duplicated, and faciliate future extension of her data anlysis pipeline!
