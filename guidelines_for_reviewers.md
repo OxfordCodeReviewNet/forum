@@ -43,6 +43,8 @@ Whatever the programming language, there is certainly a style guide to follow:
 | JavaScript | JavaScript Standard style    | JavaScript Standard style |
 | Fortran    | Fortran Best Practices       | gfortran                  |
 | Ruby       | Ruby Style Guide             | RuboCop                   |
+| Go         | Effective Go                 | gofmt                     |
+| Julia      | The Julia Style Guide        | ??                        |
 
 Following a style guide makes sure that your code is written in a way that is consistent with code written
 by other programmers (assuming they also follow the same style guide).
