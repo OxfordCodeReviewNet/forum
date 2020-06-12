@@ -270,22 +270,29 @@ Typical examples include
 
 - Ordering of nested loops
 
+It is best to access your data in the order it is laid out in memory. In Fortran, this would mean:
+
 ```fortran
 implicit none
 
    integer:: i, j
 
-   iloop: do i = 1, mesh_size_x
-         jloop: do j = 1, mesh_size_y
+   jloop: do j = 1, mesh_size_y
+         iloop: do i = 1, mesh_size_y
 
-	        ! Make sure inner index is first
+            ! Make sure inner column index is first
             a(i, j) = prefactor(i, j)*(term1(i, j) + term2(i, j))
 
-      end do jloop
-   end do iloop
+      end do iloop
+   end do jloop
 ```
 
+See [data spatial locality](https://en.wikipedia.org/wiki/Locality_of_reference)).
+
 - Use of local variables
+
+Reusing recently defined variable is fast, thanks to [data temporal locality](https://en.wikipedia.org/wiki/Locality_of_reference).
+
 ```C++
 for (int i; i<stop;i++)
 {
