@@ -66,8 +66,8 @@ for (i=0; i<26;i++){
 ```
 should be
 ```C
-int AlphabetCharacter = 26;
-for (i=0; i<AlphabetCharacter ;i++){
+int AlphabetSize = 26;
+for (i=0; i<AlphabetSize ;i++){
 ```
 [See this post by Chris Bertrand](https://dev.to/designpuddle/code-review-checklist-14ke).
 
