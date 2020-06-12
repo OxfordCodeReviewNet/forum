@@ -74,7 +74,7 @@ for (i=0; i<AlphabetSize ;i++){
 <a id="duplicated"></a>
 
 ### Duplicated code
-Copy pasting code may speed up development in the short term... but 
+Copy pasting code may speed up development in the short term... but
 - It cripples the code's maitainability and extendability (either by a colleague or yourself three months down the line).
 - Each time you modify a part, you have to remember to modify all duplicated parts without forgetting any. Not only it is boring work, but also error prone.
 - Duplicated code also decreases readability, as your code is unnecesraly longer, and makes bug hunting much harder.
@@ -180,20 +180,20 @@ def compute_acceleration(mass, total_force_on_body):
 
 ### Undocumented functions, classes and modules
 
-Any structure should be accompanied by a documentation string (commonly known as *docstring*).
+Any logical structure (function, class, module) should be accompanied by a documentation string (commonly known as *docstring*).
 Example
 ```python
 def compute_acceleration(mass, total_force_on_body):
     """
 	Compute and return acceleration on body, according to Newton's 2nd law
-	
+
 	Parameters
 	----------
 	mass: float
 	  Mass of body
 	total_force_on_body: float
 	  Sum of all forces exerted on the body
-	  
+
 	Returns:
 	--------
 	a: float
@@ -211,11 +211,11 @@ def compute_acceleration(mass, total_force_on_body):
 Commenting can be a confusing topic, since the general advice is
 > Comment you code, but not too much
 
-The above guudeline can be understood by taking a rather extreme stance: your code should not need comment
-to be understood.
+The above guideline can be understood by taking a rather extreme stance:
 
-Most of the time, comments can be avoided by using more descriptive names, shorter methods, and simpler
-constructs.
+> Good code does not need comment to be understood.
+
+The rationale is that, most of the time, comments can be avoided by using more descriptive names, shorter methods, and simpler constructs.
 
 Comments shpuld describe the *why*, not the *what*.
 
@@ -249,7 +249,7 @@ for (int i; i<stop;i++)
   local_var = vector[i];
   result = 2.*local_var*local_var + local_var + 4.
   ...
-  
+
 ```
 
 <a id="builtin"></a>
@@ -265,7 +265,3 @@ accumulate([1,2,3,4,5], initial=100) --> 100 101 103 106 110 115
 
 <a id="third-party"></a>
 ### Leveraging third party libraries
-
-
-
-
