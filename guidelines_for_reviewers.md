@@ -27,8 +27,8 @@ The following points are common guidelines, not rules. Cases may arise where it 
 4. [Unintended behaviour](#unintended)
 5. [Comments](#comments)
 6. [Performance low hanging fruits](#performance)
-7. [Use of built-in functions](#builtin)
-8. [Leveraging third-party libraries](#third-party)
+7. [Potential use of built-in functions](#builtin)
+8. [Potential use of third-party libraries](#third-party)
 
 
 ### Code style
@@ -260,9 +260,9 @@ def compute_acceleration(mass, total_force_on_body):
 
 ### Comments
 Commenting can be a confusing topic, since the general advice is *comment you code, but not too much*.
-This can be understood by taking a rather extreme stance:
+This can be understood by taking a rather *extreme* stance:
 
-> Good code does not need comment to be understood.
+> Good code does not need comments to be understood.
 
 The rationale is that, most of the time, comments can be avoided by using more descriptive names, shorter methods, and simpler constructs.
 
