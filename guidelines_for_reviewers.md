@@ -83,6 +83,8 @@ Typical solutions include
 - Defining new functions/methods that can be reused in different parts of the code
 - Use class inheritance or composition
 
+<a id="complex"></a>
+
 ### Complex `if` statements
 
 Complex `if` statements make your code much less readable, as it forces the reader to hold and process a lot
@@ -147,6 +149,8 @@ See also [Writing simpler and more maintainable Python by Anthony Shaw (video)](
   Readibility an modularity.
 - Functions should do one thing.
   Facilitates testing.
+
+<a id="obscure"></a>
 
 ### Obscure lines
 
@@ -284,7 +288,8 @@ for (int i; i<stop;i++)
 ```
 
 <a id="builtin"></a>
-### Use built in functions whenever possible
+
+### Potential use of built in functions
 Do not not reinvent the wheel!
 
 Programming languages usually come with useful libraries that implement common tasks.
@@ -295,4 +300,5 @@ accumulate([1,2,3,4,5], initial=100) --> 100 101 103 106 110 115
 ```
 
 <a id="third-party"></a>
-### Leveraging third party libraries
+
+### Potential use of third party libraries
