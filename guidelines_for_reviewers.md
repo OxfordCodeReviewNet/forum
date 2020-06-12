@@ -148,11 +148,26 @@ See also [Writing simpler and more maintainable Python by Anthony Shaw (video)](
 - Functions should do one thing.
   Facilitates testing.
 
-### Non-defensive code
-Writing defensive code is the art of preventing non-indented behavior.
-A typical example is a function with parameters that are constrained (e.g. strictly positive, integer value...).
+<a id="unintended"></a>
 
-Example of defensive function:
+### Unintended behavior
+A typical example is a function with parameters that are constrained (e.g. strictly positive, integer value...)
+.
+The following C function is compiled without errors:
+```C
+double returnArrayElement(int i, double *array){
+
+  return array[i];
+
+}
+```
+However, if `i` is negative, or larger than the total allocated size of `array`, executing the code will result in a Segmentation Fault.
+
+> Code should not trust its user, whether the user is a human or some other code.
+
+The corrolary to the above statement is a coding style known as [defensive programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html).
+
+Example of a defensive python function:
 ```python
 def compute_acceleration(mass, total_force_on_body):
 	if mass <= 0:
