@@ -1,12 +1,12 @@
 Reviewing code can be intimidating, especially if you don't consider yourself as an experienced programmer.
 What if you don't find anything to say?
 
-It is a common misconception to think that reviewers must necesseraly be advanced developpers, and that they must find bugs or make tons of comments for the review to be successful.
+It is a common misconception to think that reviewers must necessarily be advanced developers, and that they must find bugs or make tons of comments for the review to be successful.
 
 Instead, your main job as a reviewer is **simply to ask questions**. This should be easy, as this is rather unlikely that you will understand every line of code without clarifications!
-You first goal as a reviewer is to force the code author to explain the detail of their code to you. Doing so, they will very probalby identify bugs and area of improvements **themselves**.
+You first goal as a reviewer is to force the code author to explain the detail of their code to you. Doing so, they will very probably identify bugs and area of improvements **themselves**.
 
-Once you're confortable reading somebeody else's code and asking questions, the next step is to look for potential issues yourself.
+Once you're comfortable reading somebody else's code and asking questions, the next step is to look for potential issues yourself.
 If you have no idea what to look for, here is a list of the major points to check in a code review.
 
 ## What to look for as a reviewer
@@ -16,7 +16,7 @@ If you have no idea what to look for, here is a list of the major points to chec
 3. [Long functions](#long)
 4. [Complex if statements](#complexity)
 5. [Obscure lines](#obscure)
-4. [Unintended behavior](#unintended)
+4. [Unintended behaviour](#unintended)
 5. [Comments](#comments)
 6. [Performance low hanging fruits](#performance)
 7. [Use of built-in functions](#builtin)
@@ -43,20 +43,20 @@ Following a style guide makes sure that your code is written in a way that is co
 by other programmers (assuming they also follow the style guide).
 
 - You code will be easier to read/understand for programmers outside your project.
-- Code style will be consistent throughout the project even if several developpers are working on it.
+- Code style will be consistent throughout the project even if several developers are working on it.
 - Style guides are based on best practices for the language.
 
-Style guides are well worth the read, but often lenghty and sometimes obscure. Luckiliy, there exist many
+Style guides are well worth the read, but often lengthy and sometimes obscure. Luckily, there exist many
 software tools to enforce style guides automatically (see table above).
 
 <a id="naming"></a>
 
 ### Naming
-Knowingly the hardest part in software developement.
+Knowingly the hardest part in software development.
 
 - Always use descriptive names at every levels, whether it is for variables, functions/methods or classes. Name of functions and classes should convey intent.
 
-> when implmenting mathematical expresions, it's often tempting to name the variable after its mathematical symbol (e.g. `alpha`, `m`, `R0`..).
+> when implementing mathematical expressions, it's often tempting to name the variable after its mathematical symbol (e.g. `alpha`, `m`, `R0`..).
 > This is not recommended, as this makes the code less readable, and other people may use different notations. Use explicit names instead
 > (e.g. `streamwise_velocity_field`, `current`, `infection_rate`...)
 
@@ -75,9 +75,9 @@ for (i=0; i<AlphabetSize ;i++){
 
 ### Duplicated code
 Copy pasting code may speed up development in the short term... but
-- It cripples the code's maitainability and extendability (either by a colleague or yourself three months down the line).
+- It cripples the code's maintainability and extendability (either by a colleague or yourself three months down the line).
 - Each time you modify a part, you have to remember to modify all duplicated parts without forgetting any. Not only it is boring work, but also error prone.
-- Duplicated code also decreases readability, as your code is unnecesraly longer, and makes bug hunting much harder.
+- Duplicated code also decreases readability, as your code is unnecessarily longer, and makes bug hunting much harder.
 
 Typical solutions include
 - Defining new functions/methods that can be reused in different parts of the code
@@ -146,7 +146,7 @@ See also [Writing simpler and more maintainable Python by Anthony Shaw (video)](
 
 ### Long functions/methods
 - Functions should be as short as possible.
-  Readibility an modularity.
+  Readability an modularity.
 - Functions should do one thing.
   Facilitates testing.
 
@@ -185,7 +185,7 @@ Resist the clever one-liners !
 
 <a id="unintended"></a>
 
-### Unintended behavior
+### Unintended behaviour
 A typical example is a function with parameters that are constrained (e.g. strictly positive, integer value...)
 .
 The following C function is compiled without errors:
@@ -200,7 +200,7 @@ However, if `i` is negative, or larger than the total allocated size of `array`,
 
 > Code should not trust its user, whether the user is a human or some other code.
 
-The corrolary to the above statement is a coding style known as [defensive programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html).
+The corollary to the above statement is a coding style known as [defensive programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html).
 
 Example of a defensive python function:
 ```python
@@ -252,7 +252,7 @@ The above guideline can be understood by taking a rather extreme stance:
 
 The rationale is that, most of the time, comments can be avoided by using more descriptive names, shorter methods, and simpler constructs.
 
-Comments shpuld describe the *why*, not the *what*.
+Comments should describe the *why*, not the *what*.
 
 
 <a id="performance"></a>
