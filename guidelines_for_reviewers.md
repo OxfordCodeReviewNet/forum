@@ -15,7 +15,7 @@ If you have no idea what to look for, here is a list of the major points to chec
 2. [Duplicated code](#duplicated)
 3. [Long functions](#long)
 4. [Complex if statements](#complexity)
-5. [Obscure lines](#opaque)
+5. [Obscure lines](#obscure)
 4. [Unintended behavior](#unintended)
 5. [Comments](#comments)
 6. [Performance low hanging fruits](#performance)
@@ -147,6 +147,37 @@ See also [Writing simpler and more maintainable Python by Anthony Shaw (video)](
   Readibility an modularity.
 - Functions should do one thing.
   Facilitates testing.
+
+### Obscure lines
+
+Modern programming language such as Python, Ruby or even modern C++ provide powerful functionalities allowing
+programmers to do more, typing less. Although these can lead to shorter and more descriptive code, it is a double-edged sword.
+
+Consider the following line of python
+
+```python
+for ensemble in zip(*[traj_sample(x0, t0, *args, **kwargs) for _ in range(nsamples)]):
+```
+
+The above line relies on
+- A generator function call
+- List comprehension
+- List unpacking
+- The `zip` built-in function
+
+That's a lot. Although this is nice and short, this is difficult to read.
+
+Similarly to mathematical proofs, doing too much in one step makes the argument harder to follow.
+
+In the above, simply adding an extra line allow to use a descriptive intermediate variable:
+
+```python
+list_of_generators = [traj_sample(x0, t0, *args, **kwargs) for _ in range(nsamples)]
+for ensemble in zip(*list_of_generators):
+
+```
+
+Resist the clever one-liners !
 
 <a id="unintended"></a>
 
