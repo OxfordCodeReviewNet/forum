@@ -49,6 +49,10 @@ by other programmers (assuming they also follow the style guide).
 Style guides are well worth the read, but often lengthy and sometimes obscure. Luckily, there exist many
 software tools to enforce style guides automatically (see table above).
 
+> It's likely that there are several style guides available for your favorite language. For instance, pretty 
+> much bug web companies have their own javaScript style guide. However, most of the time, one style guide
+> dominates and is used by most of the community. This is the one you should probably use!
+
 <a id="naming"></a>
 
 ### Naming
@@ -70,6 +74,10 @@ int AlphabetSize = 26;
 for (i=0; i<AlphabetSize ;i++){
 ```
 [See this post by Chris Bertrand](https://dev.to/designpuddle/code-review-checklist-14ke).
+
+> Don't hesitate to use long variable names. Any good text editor these days provides 
+> [autocompletion](https://en.wikipedia.org/wiki/Autocomplete), that will save you from typing all
+> of your variables' name.
 
 <a id="duplicated"></a>
 
