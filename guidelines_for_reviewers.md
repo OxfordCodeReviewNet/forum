@@ -80,8 +80,67 @@ Copy pasting code may speed up development in the short term... but
 - Duplicated code also decreases readability, as your code is unnecesraly longer, and makes bug hunting much harder.
 
 Typical solutions include
-- Defining new functions/methods that can be reused in differnt parts of the code
+- Defining new functions/methods that can be reused in different parts of the code
 - Use class inheritance or composition
+
+### Complex `if` statements
+
+Complex `if` statements make your code much less readable, as it forces the reader to hold and process a lot
+of information simultaneously.
+
+The following `if` statement determines if yes or no a point `(x,y)` is contained inside a rectangle:
+```python
+	if (x > xmin and x < xmax and y > ymin and y < ymax):
+```
+
+The above complex condition can be replaced by a function call:
+```python
+def is_inside_rectangle(x,y):
+    x_in = x > xmin and x < xmax
+    y_in = y > ymin and y < ymax
+
+    return x_in and y_in
+
+# ...
+if is_inside_rectangle(x,y):
+```
+
+Another common problematic construct is nested `if-else` statements:
+```python
+nb_of_events = len(events)
+if nb_of_events == 1:
+    list_of_available_events = []
+else:
+    if events_subsequent:
+        list_of_available_events = [1]
+    else:
+        list_of_available_events = []
+        for i in range(nb_of_events):
+            list_of_available_events.append(i)
+```
+
+The above can be better written as:
+```python
+def get_list_of_available_events(events, events_subsequent):
+    nb_of_events = len(events)
+    if nb_of_events == 1:
+        return []
+    if events_subsequent:
+        return [1]
+    return range(nb_of_events)
+
+list_of_available_events = get_list_of_available_events()
+```
+
+Complex `if` statements and nested `if-else` significantly hinder readability.
+They also make your code much harder to test, as you'll have to write a test for each possible branch
+in your code.
+
+See the notions of [cyclomatic complexity](https://docs.codeclimate.com/docs/cyclomatic-complexity) and
+[cognitive complexity](https://docs.codeclimate.com/docs/cognitive-complexity).
+See also [Writing simpler and more maintainable Python by Anthony Shaw (video)](https://youtu.be/dqdsNoApJ80?t=303)
+
+<a id="long"></a>
 
 ### Long functions/methods
 - Functions should be as short as possible.
