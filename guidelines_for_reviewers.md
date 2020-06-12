@@ -230,16 +230,14 @@ Typical examples include
 ```fortran
 implicit none
 
-   integer:: i, j, k
-   
+   integer:: i, j
+
    iloop: do i = 1, mesh_size_x
-	   jloop: do j = 1, mesh_size_y
-         kloop: do k = 1, mesh_size_z
-         
-	        ! Make sure inner index is last
-            a(i, j, k) = prefactor(i, j, k)*(term1(i, j, k) + term2(i, j, k))
-            
-         end do kloop       
+         jloop: do j = 1, mesh_size_y
+
+	        ! Make sure inner index is first
+            a(i, j) = prefactor(i, j)*(term1(i, j) + term2(i, j))
+
       end do jloop
    end do iloop
 ```
