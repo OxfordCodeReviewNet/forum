@@ -11,9 +11,45 @@ If you have no idea what to look for, here is a list of the major points to chec
 
 ## What to look for as a reviewer
 
+1. [Naming](#naming)
+2. [Duplicated code](#duplicated)
+3. [Long functions](#long)
+4. [Complex if statements](#complexity)
+5. [Obscure lines](#opaque)
+4. [Unintended behavior](#unintended)
+5. [Comments](#comments)
+6. [Performance low hanging fruits](#performance)
+7. [Use of built-in functions](#builtin)
+8. [Leveraging third-party libraries](#third-party)
+
 *Under construction*
 
 The following points are common guidelines, not rules. Cases may arise where it is best not to follow them.
+
+### Code style
+
+Whatever the programming language, there is certainly a style guide to follow:
+
+| Language   | Style guide                  | Tool                      |
+|:----------:|:----------------------------:|:-------------------------:|
+| Python     | PEP8                         | pycodestyle               |
+| C++        | C++ Core Guidelines          | clang-tidy                |
+| R          | Hadley Wickham's style guide | lintr                     |
+| JavaScript | JavaScript Standard style    | JavaScript Standard style |
+| Fortran    | Fortran Best Practices       | gfortran                  |
+| Ruby       | Ruby Style Guide             | RuboCop                   |
+
+Following a style guide makes sure that your code is written in a way that is consistent with code written
+by other programmers (assuming they also follow the style guide).
+
+- You code will be easier to read/understand for programmers outside your project.
+- Code style will be consistent throughout the project even if several developpers are working on it.
+- Style guides are based on best practices for the language.
+
+Style guides are well worth the read, but often lenghty and sometimes obscure. Luckiliy, there exist many
+software tools to enforce style guides automatically (see table above).
+
+<a id="naming"></a>
 
 ### Naming
 Knowingly the hardest part in software developement.
@@ -34,6 +70,8 @@ int AlphabetCharacter = 26;
 for (i=0; i<AlphabetCharacter ;i++){
 ```
 [See this post by Chris Bertrand](https://dev.to/designpuddle/code-review-checklist-14ke).
+
+<a id="duplicated"></a>
 
 ### Duplicated code
 Copy pasting code may speed up development in the short term... but 
@@ -64,7 +102,9 @@ def compute_acceleration(mass, total_force_on_body):
 
 ```
 
-### Documented functions, classes and modules
+<a id="documented"></a>
+
+### Undocumented functions, classes and modules
 
 Any structure should be accompanied by a documentation string (commonly known as *docstring*).
 Example
@@ -91,6 +131,8 @@ def compute_acceleration(mass, total_force_on_body):
 
 ```
 
+<a id="comments"></a>
+
 ### Comments
 Commenting can be a confusing topic, since the general advice is
 > Comment you code, but not too much
@@ -103,9 +145,14 @@ constructs.
 
 Comments shpuld describe the *why*, not the *what*.
 
-### Performace low hanging fruits
+
+<a id="performance"></a>
+
+### Performance low hanging fruits
 Typical examples include
-- Nested loop ordering
+
+- Ordering of nested loops
+
 ```fortran
 implicit none
 
@@ -133,6 +180,7 @@ for (int i; i<stop;i++)
   
 ```
 
+<a id="builtin"></a>
 ### Use built in functions whenever possible
 Do not not reinvent the wheel!
 
@@ -143,6 +191,7 @@ from itertools import accumulate
 accumulate([1,2,3,4,5], initial=100) --> 100 101 103 106 110 115
 ```
 
+<a id="third-party"></a>
 ### Leveraging third party libraries
 
 
