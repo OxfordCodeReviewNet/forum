@@ -16,6 +16,11 @@ To learn more about code reviews and their benefits, see [What are a code review
 If you don't feel confident in your ability to review code, you might be surprised!
 See the [guidelines for reviewers](guidelines_for_reviewers.md).
 
+The Oxford Code Review Network is supported by the [Oxford Research Software Engineering group](https://www.rse.ox.ac.uk/).
+For enquiries, feel free to contact [Thibault Lestang](https://tlestang.github.io).
+
+Everyone is welcome to contribute to this repository, see [the contributing guidelines](CONTRIBUTING.md).
+
 ## <a name="guidelines"></a> Code review guidelines
 
 **All code reviews must be executed remotely until further notice.**
