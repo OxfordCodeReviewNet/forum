@@ -31,7 +31,7 @@ Priya selects a small portion of her library (about 300 lines) that she thinks i
 She opens [an issue](https://github.com/OxfordCodeReviewNet/forum/issues/3#issue-636951537) on this repository.
 
 Sam is a post-doc in the Department of Zoology. They primarily use R for their data analysis, but they have been learning python recently.
-They find Sarah's issue on this repo, and decide it's a good opportunity to have a close look a some real life python... as well as helping out a colleague!
+They find Priya's issue on this repo, and decide it's a good opportunity to have a close look a some real life python... as well as helping out a colleague!
 Sam leaves [a comment](https://github.com/OxfordCodeReviewNet/forum/issues/3#issuecomment-642595092) on Priya's issue, and they both decide to meet on MS Teams next week.
 
 Priya has a look at the [guidelines for remote code reviews](remote.md) and decides to use [tmate](https://tmate.io/) to live share her Vim session with Sam.

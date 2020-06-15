@@ -85,7 +85,8 @@ Here's [a guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-
 
 ### License and privacy (tmate)
 
-tmate is released under a free and opens source license (BSD)
+tmate is released under a free and open source license (BSD).
+
 Terminal sharing using tmate makes use of the tmate.io servers that act as a proxy between you and your collaborator(s).
 The server side of tmate is licensed under the MIT license.
 
