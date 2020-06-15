@@ -7,8 +7,8 @@ What if you don't find anything to say?
 
 It is a common misconception to think that reviewers must necessarily be advanced developers, and that they must find bugs or make tons of comments for the review to be successful.
 
-Instead, your main job as a reviewer is **simply to ask questions**. This should be easy, as this is unlikely that you will understand every line of code without clarifications.
-You first goal as a reviewer is to force the code author to explain the detail of their code to you. Doing so, they will very probably identify bugs and area of improvements **themselves**.
+Instead, your main job as a reviewer is **simply to ask questions**. This should be easy, as it is unlikely that you will understand every line of code without explanation.
+You first goal as a reviewer is to force the code author to explain their code to you in detail. Doing so, they will very probably identify bugs and area of improvements **themselves**.
 
 Once you're comfortable reading somebody else's code and asking questions about it, the next step is to look for potential issues yourself.
 If you have no idea what to look for, here is a list of the major points to check in a code review.
@@ -20,20 +20,19 @@ If you have no idea what to look for, here is a list of the major points to chec
 The following points are common guidelines, not rules. Cases may arise where it is best not to follow them.
 
 1. [Naming](#naming)
-2. [Duplicated code](#duplicated)
-3. [Long functions](#long)
-4. [Complex if statements](#complexity)
-5. [Obscure lines](#obscure)
-4. [Unintended behaviour](#unintended)
-5. [Comments](#comments)
-6. [Performance low hanging fruits](#performance)
-7. [Potential use of built-in functions](#builtin)
-8. [Potential use of third-party libraries](#third-party)
-
+1. [Duplicated code](#duplicated)
+1. [Long functions](#long)
+1. [Complex if statements](#complexity)
+1. [Obscure lines](#obscure)
+1. [Unintended behaviour](#unintended)
+1. [Comments](#comments)
+1. [Performance low hanging fruits](#performance)
+1. [Potential use of built-in functions](#builtin)
+1. [Potential use of third-party libraries](#third-party)
 
 ### Code style
 
-Whatever the programming language, there is certainly a style guide to follow:
+Whatever the programming language, there is usually a style guide, or set of best practices, to follow:
 
 | Language   | Style guide                  | Tool                      |
 |:----------:|:----------------------------:|:-------------------------:|
@@ -53,45 +52,52 @@ by other programmers (assuming they also follow the same style guide).
 - Code style will be consistent throughout the project even if several developers are working on it.
 - Style guides are based on best practices for the language.
 
-Style guides are well worth the read, but often are lengthy and (sometimes) obscure. Luckily, there exist many
-*software tools to enforce style guides automatically (see table above).
+Style guides are well worth the read, but often are lengthy and (sometimes) obscure. Luckily, there are many
+software tools to enforce style guides automatically (see table above).
 
-> It's likely that there are several style guides available for your favorite language. For instance, pretty 
-> much every web companies have their own JavaScript style guide. However, one style guide often
+> It's likely that there are several style guides available for your favourite language. For instance, pretty
+> much every web company have their own JavaScript style guide. However, one style guide often
 > dominates and is used by most of the community. This is the one you should probably use!
 
 <a id="naming"></a>
 
 ### Naming
-Knowingly the hardest part in software development.
 
-- Always use descriptive names at every levels, whether it is for variables, functions/methods or classes. Name of functions, subroutines, and classes should convey intent.
+Often the hardest part in software development.
+
+- Always use descriptive names at every level, whether it is for variables, functions/methods or classes. Name of functions, subroutines, and classes should convey intent.
 
 > Tip: When implementing mathematical expressions, it's often tempting to name the variable after its mathematical symbol (e.g. `alpha`, `m`, `R0`..).
 > This is not recommended, as this makes the code less readable, and other people may use different notations. Use explicit names instead
 > (e.g. `streamwise_velocity_field`, `current`, `infection_rate`...)
 
 - Avoid "magic numbers":
+
 ```C
-for (i=0; i<26;i++){
+for (i=0; i<26; i++){
 ```
+
 should be instead
+
 ```C
 int AlphabetSize = 26;
-for (i=0; i<AlphabetSize ;i++){
+for (i=0; i<AlphabetSize; i++){
 ```
+
 [See this post by Chris Bertrand](https://dev.to/designpuddle/code-review-checklist-14ke).
 
-> Don't hesitate to use long variable names. Any good text editor these days provides 
-> [autocompletion](https://en.wikipedia.org/wiki/Autocomplete), wich will save you from typing the whole
+> Don't hesitate to use long variable names. All good text editors provide
+> [autocompletion](https://en.wikipedia.org/wiki/Autocomplete), which will save you from typing the whole
 > of your variables' name.
 
 <a id="duplicated"></a>
 
 ### Duplicated code
+
 Copy-pasting code may speed up development in the short term... **but**
-- It cripples the code's maintainability and extendability (either by a colleague or yourself three months down the line).
-- Each time you modify a part, you have to remember to modify all duplicated parts without forgetting any. Not only it is boring work, but also error prone.
+
+- It cripples the code's maintainability and extensibility (either by a colleague or yourself three months down the line).
+- Each time you modify a part, you have to remember to modify all duplicated parts without forgetting any. Not only it is boring work, but is also error prone.
 - Duplicated code also decreases readability, as your code is unnecessarily longer, and makes bug hunting much harder.
 
 Typical alternatives to duplicated code include:
@@ -106,9 +112,10 @@ Typical alternatives to duplicated code include:
 Complex `if` statements make your code much less readable, as it forces the reader to hold and process a lot
 of information simultaneously.
 
-As an example, the following `if` statement determines if yes or no a point `(x,y)` is contained inside a rectangle:
+As an example, the following `if` statement determines if a point `(x,y)` is contained inside a rectangle:
+
 ```python
-	if (x > xmin and x < xmax and y > ymin and y < ymax):
+    if (x > xmin and x < xmax and y > ymin and y < ymax):
 ```
 
 The above complex condition can be replaced by a function call:
@@ -164,6 +171,7 @@ See also [Writing simpler and more maintainable Python by Anthony Shaw (video)](
 <a id="long"></a>
 
 ### Long functions/methods
+
 - Functions should be as short as possible.
   Readability an modularity.
 - Functions should do one thing.
@@ -173,8 +181,8 @@ See also [Writing simpler and more maintainable Python by Anthony Shaw (video)](
 
 ### Obscure lines
 
-Modern programming language such as Python, Ruby or even modern C++ provide powerful functionalities allowing
-programmers to do more, whilst typing less. Although these can lead to shorter and more descriptive code, it is a double-edged sword.
+Modern programming language such as Python, Ruby or even modern C++ provide powerful functionality to allow
+programmers to do more whilst typing less. Although these can lead to shorter and more descriptive code, it is a double-edged sword.
 
 Consider the following line of python
 
@@ -183,6 +191,7 @@ for ensemble in zip(*[traj_sample(x0, t0, *args, **kwargs) for _ in range(nsampl
 ```
 
 The above line relies on
+
 - A generator function call
 - List comprehension
 - List unpacking
@@ -190,14 +199,14 @@ The above line relies on
 
 That's a lot. Although this is nice and short, this is difficult to read. Similarly to mathematical proofs, doing too much in one step makes the argument harder to follow.
 
-In the above, simply adding an extra line allow to use a descriptive intermediate variable:
+In the above, simply adding an extra line allows you to use a descriptive intermediate variable:
 
 ```python
 list_of_generators = [traj_sample(x0, t0, *args, **kwargs) for _ in range(nsamples)]
 for ensemble in zip(*list_of_generators):
 ```
 
-Resist clever one-liners !
+Resist clever one-liners!
 
 <a id="unintended"></a>
 
@@ -205,6 +214,7 @@ Resist clever one-liners !
 
 A typical example is a function with parameters that are constrained (e.g. strictly positive, integer value...).
 The following C function is compiled without errors:
+
 ```C
 double returnArrayElement(int i, double *array){
 
@@ -212,19 +222,20 @@ double returnArrayElement(int i, double *array){
 
 }
 ```
-However, if `i` is negative, or larger than the total allocated size of `array`, executing the code will result in a Segmentation Fault.
+
+However, if `i` is negative, or larger than the total allocated size of `array`, executing the code may result in a Segmentation Fault.
 
 > Code should not trust its user, whether the user is a human or some other code.
 
 The corollary to the above statement is a programming style known as [defensive programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html).
 
 Example of a defensive python function:
+
 ```python
 def compute_acceleration(mass, total_force_on_body):
     if mass <= 0:
         raise ValueError("Mass of body must be strictly positive")
     return total_force_on_body/mass
-
 ```
 
 <a id="documented"></a>
@@ -238,20 +249,20 @@ Example:
 ```python
 def compute_acceleration(mass, total_force_on_body):
     """
-	Compute and return acceleration on body, according to Newton's 2nd law
+    Compute and return acceleration on body, according to Newton's 2nd law
 
-	Parameters
-	----------
-	mass: float
-	  Mass of body
-	total_force_on_body: float
-	  Sum of all forces exerted on the body
+    Parameters
+    ----------
+    mass: float
+      Mass of body
+    total_force_on_body: float
+      Sum of all forces exerted on the body
 
-	Returns:
-	--------
-	a: float
+    Returns:
+    --------
+    a: float
       The acceleration
-	"""
+    """
     if mass <= 0:
         raise ValueError("Mass of body must be strictly positive")
     return total_force_on_body/mass
@@ -261,6 +272,7 @@ def compute_acceleration(mass, total_force_on_body):
 <a id="comments"></a>
 
 ### Comments
+
 Commenting can be a confusing topic, since the general advice is *comment you code, but not too much*.
 This can be understood by taking a rather *extreme* stance:
 
@@ -270,10 +282,10 @@ The rationale is that, most of the time, comments can be avoided by using more d
 
 Take home message: comments should describe the *why*, not the *what*.
 
-
 <a id="performance"></a>
 
 ### Performance low hanging fruits
+
 Typical examples include
 
 - Ordering of nested loops
@@ -313,9 +325,11 @@ for (int i; i<stop;i++)
 <a id="builtin"></a>
 
 ### Potential use of built in functions
+
 Do not not reinvent the wheel!
 
 Programming languages usually come with useful libraries that implement common tasks.
+
 ```python
 from itertools import accumulate
 
