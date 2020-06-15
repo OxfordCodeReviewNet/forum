@@ -34,16 +34,16 @@ The following points are common guidelines, not rules. Cases may arise where it 
 
 Whatever the programming language, there is usually a style guide, or set of best practices, to follow:
 
-| Language   | Style guide                  | Tool                      |
-|:----------:|:----------------------------:|:-------------------------:|
-| Python     | PEP8                         | pycodestyle               |
-| C++        | C++ Core Guidelines          | clang-tidy                |
-| R          | Hadley Wickham's style guide | lintr                     |
-| JavaScript | JavaScript Standard style    | JavaScript Standard style |
-| Fortran    | Fortran Best Practices       | gfortran                  |
-| Ruby       | Ruby Style Guide             | RuboCop                   |
-| Go         | Effective Go                 | gofmt                     |
-| Julia      | The Julia Style Guide        | ??                        |
+| Language   | Style guide                              | Tool                      |
+|:----------:|:----------------------------------------:|:-------------------------:|
+| Python     | PEP8                                     | pycodestyle               |
+| C++        | LLVM style guide, Mozilla style guide... | clang-format              |
+| R          | Hadley Wickham's style guide             | lintr                     |
+| JavaScript | JavaScript Standard style                | JavaScript Standard style |
+| Fortran    | Fortran Best Practices                   | gfortran                  |
+| Ruby       | Ruby Style Guide                         | RuboCop                   |
+| Go         | Effective Go                             | gofmt                     |
+| Julia      | The Julia Style Guide                    | ??                        |
 
 Following a style guide makes sure that your code is written in a way that is consistent with code written
 by other programmers (assuming they also follow the same style guide).
@@ -57,7 +57,7 @@ software tools to enforce style guides automatically (see table above).
 
 > It's likely that there are several style guides available for your favourite language. For instance, pretty
 > much every web company have their own JavaScript style guide. However, one style guide often
-> dominates and is used by most of the community. This is the one you should probably use!
+> dominates and is used by most of the community (C++ is a notable exception). This is the one you should probably use!
 
 <a id="naming"></a>
 
