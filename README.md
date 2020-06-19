@@ -1,6 +1,8 @@
-# Oxford code review network
+# :mag: Oxford code review network
 
-[Code review guidelines](#guidelines) | [Getting started](#gettingstarted) | [What are code reviews ?](#whatarecodereviews) | [Tools for remote code reviews](remote.md) | [Guidelines for reviewers](guidelines_for_reviewers.md)
+**Subscribe to [oxcrn-announce@mailist.ox.ac.uk](mailto:subscribe-oxcrn-announce@maillist.ox.ac.uk) to receive updates about upcoming events.**
+
+[Code review guidelines](#guidelines) | [Getting started](#gettingstarted) | [What are code reviews ?](#whatarecodereviews) | [Tools for remote code reviews](remote.md) | [Guidelines for reviewers](guidelines_for_reviewers.md) [Events](#whatshappening)
 
 Want to get your code reviewed?
 Interested in reviewing other researchers' code?
@@ -11,14 +13,14 @@ If you'd like to volunteer to review some research code, just leave a comment on
 
 If you'd like to participate but are not familiar with GitHub or/and its issue tracking system, see the [getting started section](#gettingstarted).
 
-To learn more about code reviews and their benefits, see [What are a code reviews?](#whatarecodereviews).
+To learn more about code reviews and their benefits, see [What are code reviews?](#whatarecodereviews).
 
 If you don't feel confident in your ability to review code, you might be surprised!
 See the [guidelines for reviewers](guidelines_for_reviewers.md).
 
-The Oxford Code Review Network is supported by the [Oxford Research Software Engineering group](https://www.rse.ox.ac.uk/) and [Reproducible Research Oxford](https://ox.ukrn.org/).
+The Oxford Code Review Network is supported by the [Oxford Research Software Engineering group](https://www.rse.ox.ac.uk/) and [Reproducible Research Oxford](https://ox.ukrn.org/). Everyone is welcome to contribute to this repository, see [the contributing guidelines](CONTRIBUTING.md).
 
-Everyone is welcome to contribute to this repository, see [the contributing guidelines](CONTRIBUTING.md).
+OxCRN aims at building an active and welcoming community through regular events. Please subscribe to [oxcrn-announce@mailist.ox.ac.uk](mailto:subscribe-oxcrn-announce@maillist.ox.ac.uk) to receive updates.
 
 ## <a name="guidelines"></a> Code review guidelines
 
@@ -117,3 +119,19 @@ The issue comes pre-filled with some place-holder content, feel free to replace 
 
 To see current review opportunities, simply browse the issues by clicking on the _Issues_ tab (see previous section).
 If you're interested in reviewing a particular piece of code, simply click on the corresponding issue and write a comment.
+
+# <a name="whatshappening"></a> What's happenning
+
+OxCRN aims at building an active and welcoming community through regular events.
+Please subscribe to [oxcrn-announce@mailist.ox.ac.uk](mailto:subscribe-oxcrn-announce@maillist.ox.ac.uk) to receive updates.
+To do so, just send a blank email to [subscribe-oxcrn-announce@mailist.ox.ac.uk](mailto:subscribe-oxcrn-announce@maillist.ox.ac.uk) (**ox.ac.uk addresses only**).
+
+## Upcoming events
+
+### OxCRN remote launch event - July 2020 (date TBC)
+
+- Introduction to OxCRN
+- Goals and roadmap
+- code review demo :microscope:
+- How to get involved
+- Open discussion / social :beers: :tea:
