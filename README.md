@@ -1,7 +1,8 @@
 # :mag: Oxford code review network
 
-:evelope: **Subscribe to the OxCRN mailing list to receive updates about upcoming events.** :envelope:
+:envelope: **Subscribe to the OxCRN mailing list to receive updates about upcoming events.**
 **To do so, send a blank email to [oxcrn-announce-subscribe@maillist.ox.ac.uk](mailto:oxcrn-announce-subscribe@maillist.ox.ac.uk)**
+
 [Code review guidelines](#guidelines) | [Getting started](#gettingstarted) | [Tools for remote code reviews](remote.md) | [Guidelines for reviewers](guidelines_for_reviewers.md) | [Events](#whatshappening) :mega:
 
 Want to get your code reviewed?
