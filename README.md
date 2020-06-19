@@ -20,8 +20,7 @@ See the [guidelines for reviewers](guidelines_for_reviewers.md).
 
 The Oxford Code Review Network is supported by the [Oxford Research Software Engineering group](https://www.rse.ox.ac.uk/) and [Reproducible Research Oxford](https://ox.ukrn.org/). Everyone is welcome to contribute to this repository, see [the contributing guidelines](CONTRIBUTING.md).
 
-OxCRN aims at building an active and welcoming community through [regular events](#whatshappening). Please subscribe to
-[the OxCRN mailing list](mailto:subscribe-oxcrn-announce@maillist.ox.ac.uk) to receive updates. :incoming_envelope:
+OxCRN aims at building an active and welcoming community through regular events. Please [subscribe to the OxCRN mailing list](#whatshappening) to receive updates. :incoming_envelope:
 
 ## <a name="guidelines"></a> Code review guidelines
 
