@@ -1,6 +1,6 @@
 # :mag: Oxford code review network
 
-**Subscribe to [oxcrn-announce@maillist.ox.ac.uk](mailto:subscribe-oxcrn-announce@maillist.ox.ac.uk) to receive updates about upcoming events.**
+**Subscribe to [oxcrn-announce@maillist.ox.ac.uk](mailto:oxcrn-announce-subscribe@maillist.ox.ac.uk) to receive updates about upcoming events.**
 
 [Code review guidelines](#guidelines) | [Getting started](#gettingstarted) | [Tools for remote code reviews](remote.md) | [Guidelines for reviewers](guidelines_for_reviewers.md) | [Events](#whatshappening) :mega:
 
@@ -124,8 +124,8 @@ If you're interested in reviewing a particular piece of code, simply click on th
 
 OxCRN aims at building an active and welcoming community through regular events.
 
-Please subscribe to [oxcrn-announce@maillist.ox.ac.uk](mailto:subscribe-oxcrn-announce@maillist.ox.ac.uk) to receive updates.
-To do so, just send a blank email to [subscribe-oxcrn-announce@maillist.ox.ac.uk](mailto:subscribe-oxcrn-announce@maillist.ox.ac.uk) (**ox.ac.uk addresses only**).
+Please subscribe to [oxcrn-announce@maillist.ox.ac.uk](mailto:oxcrn-announce-subscribe@maillist.ox.ac.uk) to receive updates.
+To do so, just send a blank email to [oxcrn-announce-subscribe@maillist.ox.ac.uk](mailto:oxcrn-announce-subscribe@maillist.ox.ac.uk) (**ox.ac.uk addresses only**).
 
 ## OxCRN remote launch event - July 2020 (date TBC)
 
