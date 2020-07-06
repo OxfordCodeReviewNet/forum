@@ -35,7 +35,7 @@ Please subscribe to `oxcrn-announce@maillist.ox.ac.uk`(mailto:oxcrn-announce-sub
 - Goals and roadmap
 - code review demo :microscope:
 - How to get involved
-- Open discussion / social :beers: :tea:
+- Open discussion :tea: :coffee:
 
 [Register here](https://www.eventbrite.co.uk/e/introduction-to-the-oxford-code-review-network-tickets-112414240018)
 
