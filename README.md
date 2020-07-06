@@ -23,6 +23,23 @@ The Oxford Code Review Network is supported by the [Oxford Research Software Eng
 
 OxCRN aims at building an active and welcoming community through regular events. Please [subscribe to the OxCRN mailing list](#whatshappening) to receive updates. :incoming_envelope:
 
+## <a name="whatshappening"></a> Upcoming events
+
+OxCRN aims at building an active and welcoming community through regular events.
+
+Please subscribe to [oxcrn-announce@maillist.ox.ac.uk](mailto:oxcrn-announce-subscribe@maillist.ox.ac.uk) to receive updates.
+To do so, just send a blank email to [oxcrn-announce-subscribe@maillist.ox.ac.uk](mailto:oxcrn-announce-subscribe@maillist.ox.ac.uk) (**ox.ac.uk addresses only**).
+
+### OxCRN remote launch event - 17.07.2020 14:00-15:00
+
+- Introduction to OxCRN
+- Goals and roadmap
+- code review demo :microscope:
+- How to get involved
+- Open discussion / social :beers: :tea:
+
+[Register here](https://www.eventbrite.co.uk/e/introduction-to-the-oxford-code-review-network-tickets-112414240018)
+
 ## <a name="guidelines"></a> Code review guidelines
 
 **All code reviews must be executed remotely until further notice.**
@@ -121,17 +138,3 @@ The issue comes pre-filled with some place-holder content, feel free to replace 
 To see current review opportunities, simply browse the issues by clicking on the _Issues_ tab (see previous section).
 If you're interested in reviewing a particular piece of code, simply click on the corresponding issue and write a comment.
 
-# <a name="whatshappening"></a> What's happenning
-
-OxCRN aims at building an active and welcoming community through regular events.
-
-Please subscribe to [oxcrn-announce@maillist.ox.ac.uk](mailto:oxcrn-announce-subscribe@maillist.ox.ac.uk) to receive updates.
-To do so, just send a blank email to [oxcrn-announce-subscribe@maillist.ox.ac.uk](mailto:oxcrn-announce-subscribe@maillist.ox.ac.uk) (**ox.ac.uk addresses only**).
-
-## OxCRN remote launch event - July 2020 (date TBC)
-
-- Introduction to OxCRN
-- Goals and roadmap
-- code review demo :microscope:
-- How to get involved
-- Open discussion / social :beers: :tea:
