@@ -3,6 +3,8 @@
 :envelope: **Subscribe to `oxcrn-announce@maillist.ox.ac.uk` to receive updates about upcoming events.**
 **[Click here to subscribe](https://web.maillist.ox.ac.uk/ox/subscribe/oxcrn-announce)**.
 
+**Join the OxCRN Slack workspace!** [Click here to join](https://join.slack.com/t/oxfordcodereviewnet/shared_invite/zt-fnitmq4n-_hVZyaFdFfC0lbLb47gtww). _If you're mail domain is not in the list of authorized domains, feel free to request an invitation._
+
 [Code review guidelines](#guidelines) | [Getting started](#gettingstarted) | [Tools for remote code reviews](remote.md) | [Guidelines for reviewers](guidelines_for_reviewers.md) | [Events](#whatshappening) :mega:
 
 Want to get your code reviewed?
