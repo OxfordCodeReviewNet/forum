@@ -1,11 +1,5 @@
 # :mag: Oxford code review network
 
-:envelope: **Subscribe to `oxcrn-announce@maillist.ox.ac.uk` to receive updates about upcoming events.**
-**[Click here to subscribe](https://web.maillist.ox.ac.uk/ox/subscribe/oxcrn-announce)**.
-
-**Join the OxCRN Slack workspace!** [Click here to join](https://join.slack.com/t/oxfordcodereviewnet/shared_invite/zt-fnitmq4n-_hVZyaFdFfC0lbLb47gtww). _If your mail domain is not in the list of authorized domains, feel free to request an invitation._
-_If you want to get in touch, but don't want to use Slack, feel free to contact one of the main contributors by email (you can find them on the right)._
-
 [Code review guidelines](#guidelines) | [Getting started](#gettingstarted) | [Tools for remote code reviews](remote.md) | [Guidelines for reviewers](guidelines_for_reviewers.md) | [Events](#whatshappening) :mega:
 
 Want to get your code reviewed?
@@ -15,16 +9,25 @@ This repository acts as a central place for organising code reviews at the Unive
 If you'd like your code to be reviewed by someone else, simply open an issue with a brief description of your code (language and context).
 If you'd like to volunteer to review some research code, just leave a comment on the corresponding issue to let the author know that you're available to review their code.
 
+You can find more information about code reviews by reading the [Code review guidelines](#guidelines) section.
+
+You can also [https://www.youtube.com/watch?v=6g1GfTgSVbY&t=1276s](watch an introduction to OxCRN on YouTube). :tv:
+
 If you'd like to participate but are not familiar with GitHub or/and its issue tracking system, see the [getting started section](#gettingstarted).
 
-To learn more about code reviews and their benefits, see [What are code reviews?](#whatarecodereviews).
+To learn more about code reviews, and what they look like, see [What are code reviews?](#whatarecodereviews).
 
 If you don't feel confident in your ability to review code, you might be surprised!
 See the [guidelines for reviewers](guidelines_for_reviewers.md).
 
 The Oxford Code Review Network is supported by the [Oxford Research Software Engineering group](https://www.rse.ox.ac.uk/) and [Reproducible Research Oxford](https://ox.ukrn.org/). Everyone is welcome to contribute to this repository, see [the contributing guidelines](CONTRIBUTING.md).
 
+## Community
+
 OxCRN aims at building an active and welcoming community through regular events. Please [subscribe to the OxCRN mailing list](#whatshappening) to receive updates. :incoming_envelope:
+
+You can also [Join the OxCRN Slack workspace](https://join.slack.com/t/oxfordcodereviewnet/shared_invite/zt-fnitmq4n-_hVZyaFdFfC0lbLb47gtww). _If your mail domain is not in the list of authorized domains, feel free to request an invitation._
+_If you want to get in touch, but don't want to use Slack, feel free to contact one of the main contributors by email (you can find them on the right)._
 
 ## <a name="whatshappening"></a> Upcoming events
 
@@ -40,11 +43,11 @@ Please subscribe to `oxcrn-announce@maillist.ox.ac.uk`. Click [here](https://web
 - How to get involved
 - Open discussion :tea: :coffee:
 
-[Register here](https://www.eventbrite.co.uk/e/introduction-to-the-oxford-code-review-network-tickets-112414240018)
+[https://www.youtube.com/watch?v=6g1GfTgSVbY&t=1276s](Watch the presentation on YouTube).
 
 ## <a name="guidelines"></a> Code review guidelines
 
-**All code reviews must be executed remotely until further notice.**
+**All code reviews are executed remotely until further notice.**
 **See [remote code reviews](remote.md) for advice about carrying out remote code reviews.**
 
 ### Typical code review scenario
@@ -96,7 +99,7 @@ All code reviews must be carried out remotely at the moment. Please have a look 
 
 - Code reviewing can be a tiring exercise! We recommend to keep the sessions short (one hour maximum), but you are welcome to meet more than once.
 
-## <a name="whatarecodereviews"></a> What are code reviews?
+## <a name="whatarecodereviews"></a> Why code reviews
 
 A code review is simply the action of having a deep and critical look at someone else's code.
 This is common practice in the private sector, and more generally in the open source software development community, but still very rarely happen in academia.
