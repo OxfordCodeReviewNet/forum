@@ -11,7 +11,7 @@ If you'd like to volunteer to review some research code, just leave a comment on
 
 You can find more information about code reviews by reading the [Code review guidelines](#guidelines) section.
 
-You can also [https://www.youtube.com/watch?v=6g1GfTgSVbY&t=1276s](watch an introduction to OxCRN on YouTube). :tv:
+You can also [watch an introduction to OxCRN (YouTube)](https://www.youtube.com/watch?v=6g1GfTgSVbY&t=1276s). :tv:
 
 If you'd like to participate but are not familiar with GitHub or/and its issue tracking system, see the [getting started section](#gettingstarted).
 
