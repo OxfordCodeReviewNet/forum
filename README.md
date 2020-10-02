@@ -49,7 +49,7 @@ Please subscribe to `oxcrn-announce@maillist.ox.ac.uk`. Click [here](https://web
 - How to get involved
 - Open discussion :tea: :coffee:
 
-[https://www.youtube.com/watch?v=6g1GfTgSVbY&t=1276s](Watch the presentation on YouTube).
+[Watch the presentation on YouTube](https://www.youtube.com/watch?v=6g1GfTgSVbY&t=1276s).
 
 ## <a name="guidelines"></a> Code review guidelines
 
