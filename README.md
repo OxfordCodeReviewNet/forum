@@ -2,25 +2,31 @@
 
 [Code review guidelines](#guidelines) | [Getting started](#gettingstarted) | [Tools for remote code reviews](remote.md) | [Guidelines for reviewers](guidelines_for_reviewers.md) | [Events](#whatshappening) :mega:
 
-Want to get your code reviewed?
+Want to get feedback on your code? Could use a second pair of eyes to track down a bug?
 Interested in reviewing other researchers' code?
 
-This repository acts as a central place for organising code reviews at the University of Oxford.
-If you'd like your code to be reviewed by someone else, simply open an issue with a brief description of your code (language and context).
+This repository acts as a central place for organising **code reviews at the University of Oxford**.
+If you'd like your code to be reviewed by someone else, simply open an issue with a brief description of your code.
 If you'd like to volunteer to review some research code, just leave a comment on the corresponding issue to let the author know that you're available to review their code.
+If you'd like to participate but are not familiar with GitHub or/and its issue tracking system, see the [getting started section](#gettingstarted).
+
+Code reviews are **short** and **informal** meetings in which a researcher or student (referred to as the *code author*, or *reviewee*) discuss their code with one or several other researchers or students (referred to as *reviewers*). 
+Code reviews typically last an hour and focus on a very specific part of a project, whether it's a short script or a couple of functions/subroutines.
+Particularly, code reviews are not meant as a formal quality control for an entire project, but rather as an excuse for both rewiewees and reviewers to have a conversation over a short piece of code.
+It is an opportunity for both to exchange about their respective software practice and learn from one another.
 
 You can find more information about code reviews by reading the [Code review guidelines](#guidelines) section.
 
 You can also [watch an introduction to OxCRN (YouTube)](https://www.youtube.com/watch?v=6g1GfTgSVbY&t=1276s). :tv:
 
-If you'd like to participate but are not familiar with GitHub or/and its issue tracking system, see the [getting started section](#gettingstarted).
-
-To learn more about code reviews, and what they look like, see [What are code reviews?](#whatarecodereviews).
+Engaging in regular code reviews, both as reviewer and reviewee, can have a **tremendous impact on the quality of your research software**: it will be more readable, maintainable and extendable, both by yourself and your colleagues.
+This means a more efficient, more reproducible and easier to disseminate research. To learn more about the benefit of code reviews for research software, see [Why code reviews?](#whatarecodereviews).
 
 If you don't feel confident in your ability to review code, you might be surprised!
 See the [guidelines for reviewers](guidelines_for_reviewers.md).
 
-The Oxford Code Review Network is supported by the [Oxford Research Software Engineering group](https://www.rse.ox.ac.uk/) and [Reproducible Research Oxford](https://ox.ukrn.org/). Everyone is welcome to contribute to this repository, see [the contributing guidelines](CONTRIBUTING.md).
+The Oxford Code Review Network is supported by the [Oxford Research Software Engineering group](https://www.rse.ox.ac.uk/) and [Reproducible Research Oxford](https://ox.ukrn.org/).
+Everyone is welcome to contribute to this repository, see [the contributing guidelines](CONTRIBUTING.md).
 
 ## Community
 
